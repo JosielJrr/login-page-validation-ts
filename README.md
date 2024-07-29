@@ -1,46 +1,56 @@
-# Getting Started with Create React App
+# Login Page
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<div align="center">
+  <img src="src/assets/loginPage.PNG" alt="Interface da Página de Login" width=600px>
+</div>
 
-## Available Scripts
+Este projeto é uma página de login desenvolvida em React que valida os campos de entrada e controla o estado do botão de envio com base na validade do formulário.
 
-In the project directory, you can run:
+## Funcionalidades
 
-### `npm start`
+- **Validação de Campos**: Verifica se os campos de email e senha estão preenchidos e válidos.
+- **Botão Desabilitado**: O botão de login é desativado se o formulário não for válido.
+- **Exibição de Mensagens de Erro**: Mostra mensagens de erro se as entradas forem inválidas.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Tecnologias Usadas
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+- React
+- TypeScript
+- JavaScript
+- HTML
+- CSS
 
-### `npm test`
+## Instalação
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Para executar este projeto localmente, siga os seguintes passos:
 
-### `npm run build`
+1. Clone o repositório:
+    ```bash
+    git clone https://github.com/JosielJrr/login-page-validation-ts.git
+    ```
+2. Navegue para o diretório do projeto:
+    ```bash
+    cd login-page-validation-ts
+    ```
+3. Instale as dependências:
+    ```bash
+    npm install
+    ```
+4. Inicie o servidor de desenvolvimento:
+    ```bash
+    npm start
+    ```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Scripts Disponíveis
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+No diretório do projeto, você pode executar:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- `npm start`: Inicia a aplicação em modo de desenvolvimento.
+- `npm test`: Executa os testes em modo interativo.
+- `npm run build`: Cria uma versão otimizada para produção da aplicação.
+- `npm run eject`: Remove as dependências de configuração e permite personalizar o setup (opcional).
 
-### `npm run eject`
+## Notas Adicionais
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+- Este projeto foi desenvolvido como parte do aprendizado de React e validação de formulários usando React Hook Form e Yup.
+- Este projeto foi desenvolvido como parte da Formação React Developer da Digital Innovation One.
