@@ -1,8 +1,15 @@
 import { ButtonContainer } from "./styles";
 import { IButtonProps } from "./types";
 
-const Button = ({ title, onClick }: IButtonProps) => {
-  return <ButtonContainer onClick={onClick}>{title}</ButtonContainer>;
+const Button: React.FC<IButtonProps> = ({ title, disabled, onClick }) => {
+  return (
+    <ButtonContainer
+      disabled={disabled}
+      onClick={disabled ? undefined : onClick}
+    >
+      {title}
+    </ButtonContainer>
+  );
 };
 
 export default Button;

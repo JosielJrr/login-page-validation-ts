@@ -1,17 +1,26 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
+interface ButtonProps {
+  onClick?: React.MouseEventHandler<HTMLButtonElement>;
+  children?: React.ReactNode;
+  disabled?: boolean;
+}
 
-export const ButtonContainer = styled.button`
-    width: 100%;
-    height: 42px;
-    background-color: #81259D;
-    color: #FFF;
+export const ButtonContainer = styled.button<ButtonProps>`
+  width: 100%;
+  height: 42px;
+  background-color: ${({ disabled }) => (disabled ? "#dcdcdc" : "#81259d")};
+  color: ${({ disabled }) => (disabled ? "#a0a0a0" : "#fff")};
+  border: 1px solid ${({ disabled }) => (disabled ? "#dcdcdc" : "#81259d")};
+  border-radius: 21px;
 
-    border: 1px solid #81259D;
-    border-radius: 21px;
+  &:hover {
+    opacity: ${({ disabled }) => (disabled ? "1" : "0.6")};
+    cursor: ${({ disabled }) => (disabled ? "not-allowed" : "pointer")};
+  }
 
-    &:hover {
-        opacity: 0.6;
-        cursor:pointer;
-    }
-`
+  &:focus {
+    outline: none;
+  }
+  }
+`;
