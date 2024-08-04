@@ -53,4 +53,4 @@ No diretório do projeto, você pode executar:
 ## Notas Adicionais
 
 - Este projeto foi desenvolvido como parte do aprendizado de React e validação de formulários usando React Hook Form e Yup.
-- Este projeto foi desenvolvido como parte da Formação React Developer da Digital Innovation One.
+- Este projeto foi desenvolvido como parte da Formação React Developer da [Digital Innovation One](https://www.dio.me/).
