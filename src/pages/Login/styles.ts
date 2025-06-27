@@ -1,6 +1,5 @@
 import styled from 'styled-components';
 
-
 export const Container = styled.div`
     width: 100%; 
     height: 100vh;
@@ -18,16 +17,25 @@ export const LoginContainer = styled.div`
     border-radius: 8px;
     padding: 20px;
 
-    flex:1;
+    flex: 1;
     display: flex;
     align-items: flex-start;
     justify-content: center;
+
+    @media (max-width: 480px) {
+        padding: 15px;
+        max-width: 90vw;
+    }
 `
 
 export const Title = styled.h1`
     font-size: 42px;
     font-weight: 700;
     color: #81259D;
+
+    @media (max-width: 480px) {
+        font-size: 32px;
+    }
 `
 
 export const Row = styled.div`
@@ -35,6 +43,11 @@ export const Row = styled.div`
     display: flex;
     align-items: flex-start;
     justify-content: center;
+
+    @media (max-width: 480px) {
+        flex-direction: column;
+        align-items: stretch;
+    }
 `
 
 export const Column = styled.div`
@@ -44,7 +57,7 @@ export const Column = styled.div`
     align-items: flex-start;
     justify-content: center;
 `
+
 export const Spacing = styled.div`
     margin: 10px 0;
 `
-

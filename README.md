@@ -1,56 +1,41 @@
-# Login Page
+# 🔐 Página de Login
+
+Página de login desenvolvida em React que valida os campos de entrada e controla o estado do botão de envio com base na validade do formulário.
 
 <div align="center">
-  <img src="src/assets/loginPage.PNG" alt="Interface da Página de Login" width=600px>
+  <img src="./public/loginPage.PNG" alt="Preview Página de Login" width="600px">
 </div>
 
-Este projeto é uma página de login desenvolvida em React que valida os campos de entrada e controla o estado do botão de envio com base na validade do formulário.
+## ✨ Funcionalidades
 
-## Funcionalidades
+- **Validação**: Verifica se os campos de email e senha estão preenchidos e válidos.
+- **Botão Desabilitado**: Login só é ativado com formulário válido.
+- **Mensagens de erro**: Exibe feedback para entradas inválidas.
 
-- **Validação de Campos**: Verifica se os campos de email e senha estão preenchidos e válidos.
-- **Botão Desabilitado**: O botão de login é desativado se o formulário não for válido.
-- **Exibição de Mensagens de Erro**: Mostra mensagens de erro se as entradas forem inválidas.
+## 🛠 Tecnologias Utilizadas
 
-## Tecnologias Usadas
+- [React](https://conf.react.dev/)
+- [React Hook Form](https://react-hook-form.com/)
+- [Yup](https://github.com/jquense/yup)
+- [Styled-components](https://styled-components.com/)
+- [TypeScript](https://www.typescriptlang.org/)
 
-- React
-- TypeScript
-- JavaScript
-- HTML
-- CSS
-
-## Instalação
+## ⚙️ Instalação
 
 Para executar este projeto localmente, siga os seguintes passos:
 
 1. Clone o repositório:
-    ```bash
-    git clone https://github.com/JosielJrr/login-page-validation-ts.git
-    ```
-2. Navegue para o diretório do projeto:
-    ```bash
-    cd login-page-validation-ts
-    ```
-3. Instale as dependências:
-    ```bash
-    npm install
-    ```
-4. Inicie o servidor de desenvolvimento:
-    ```bash
-    npm start
-    ```
+   ```bash
+   git clone https://github.com/JosielJrr/login-page-validation-ts.git
+   cd login-page-validation-ts
+   ```
+2. Instale as dependências:
+   ```bash
+   npm install
+   ```
+3. Inicie o servidor:
+   ```bash
+   npm start
+   ```
 
-## Scripts Disponíveis
-
-No diretório do projeto, você pode executar:
-
-- `npm start`: Inicia a aplicação em modo de desenvolvimento.
-- `npm test`: Executa os testes em modo interativo.
-- `npm run build`: Cria uma versão otimizada para produção da aplicação.
-- `npm run eject`: Remove as dependências de configuração e permite personalizar o setup (opcional).
-
-## Notas Adicionais
-
-- Este projeto foi desenvolvido como parte do aprendizado de React e validação de formulários usando React Hook Form e Yup.
-- Este projeto foi desenvolvido como parte da Formação React Developer da [Digital Innovation One](https://www.dio.me/).
+> Projeto desenvolvido na **Formação React Developer da [DIO](https://www.dio.me/)**, como parte do aprendizado em validação de formulários com **React Hook Form** e **Yup**.
